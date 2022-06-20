@@ -4,10 +4,12 @@ import logoSub from "../../assets/images/logo-s.png";
 import { useNavigate } from "react-router-dom";
 import AnimatedLetter from "../AnimatedLetters/AnimatedLetters";
 
+import Logo from "./Logo/Logo";
+
 const Home = () => {
   const [letterName, setLetterName] = useState("text-animate");
   const navigate = useNavigate();
-  const nameArray = ["l", "o", "b", "o", "d", "a", "n"];
+  const nameArray = ["e", "z", "c", "o", "d", "e"];
   const jobArray = [
     "F",
     "r",
@@ -28,11 +30,13 @@ const Home = () => {
     "e",
     "r",
   ];
+
   useEffect(() => {
     setTimeout(() => {
       setLetterName("text-animate-hover");
     }, 4000);
   }, []);
+
   return (
     <div className="container home-page">
       <div className="text-area">
@@ -51,7 +55,7 @@ const Home = () => {
           <AnimatedLetter
             letterName={letterName}
             strArray={jobArray}
-            idx={22}
+            idx={21}
           />{" "}
         </h1>
         <h2> Frontend Developer | Javascript Expert | Gamer </h2>
@@ -60,6 +64,7 @@ const Home = () => {
           CONTACT ME{" "}
         </button>
       </div>
+      <Logo />
     </div>
   );
 };
