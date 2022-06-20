@@ -13,6 +13,15 @@
     color: #ffd700;
   }
 }
+.animate-about {
+  min-width: 10px;
+  animation-fill-mode: both;
+  display: inline-block;
+  &:hover {
+    animation: rubberBand 1s;
+    color: white;
+  }
+}
 
 @for $i from 1 through 38 {
   .text-animate._#{$i} {
