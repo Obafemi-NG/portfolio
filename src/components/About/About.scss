@@ -30,6 +30,7 @@
       margin-left: 10px;
       position: relative;
       margin-bottom: 40px;
+      white-space: nowrap;
       &::before {
         content: "<h1>";
         font-size: 18px;

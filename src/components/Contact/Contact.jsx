@@ -3,6 +3,7 @@ import AnimatedLetters from "../AnimatedLetters/AnimatedLetters";
 import { useEffect, useRef, useState } from "react";
 import Loader from "react-loaders";
 import emailjs from "@emailjs/browser";
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 
 const Contact = () => {
   const [letterName, setLetterName] = useState("text-animate");
@@ -78,6 +79,24 @@ const Contact = () => {
                 </li>
               </ul>
             </form>
+          </div>
+        </div>
+        <div className="map-container">
+          <div className="dev-info">
+            Obafemi Oludahunsi <br /> Dele Ajayi close, 100275 <br /> Alimosho
+            LGA, <br /> Lagos, Nigeria. <br />{" "}
+            <span> oludahunsiobafemi18@gmail.com</span>
+          </div>
+          <div id="map" className="map-wrap">
+            <MapContainer center={[6.6025737, 3.297146]} zoom={13}>
+              <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+              <Marker position={[6.6025737, 3.297146]}>
+                <Popup>
+                  Hezcode Lives here. <br /> He's an introvert, You'll
+                  definitely meet him at home.
+                </Popup>
+              </Marker>
+            </MapContainer>
           </div>
         </div>
       </div>
