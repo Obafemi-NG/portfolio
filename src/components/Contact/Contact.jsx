@@ -1,15 +1,41 @@
 import "./Contact.scss";
 import AnimatedLetters from "../AnimatedLetters/AnimatedLetters";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Loader from "react-loaders";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const [letterName, setLetterName] = useState("text-animate");
+  const formRef = useRef();
+
   useEffect(() => {
     setTimeout(() => {
       setLetterName("animate-about");
     }, 3000);
   }, []);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "service_c7p52px",
+        "template_ym0gj2s",
+        formRef.current,
+        "Wd_PzjQj0iCoWV7-F"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert("Message sent successfully!");
+          window.location.reload(false);
+        },
+        (error) => {
+          console.log(error.text);
+          alert("Failed to send. Please try again later.");
+        }
+      );
+  };
+
   return (
     <>
       <div className="container contact-page">
@@ -22,7 +48,7 @@ const Contact = () => {
             />
           </h1>
           <div className="form-area">
-            <form>
+            <form ref={formRef} onSubmit={sendEmail}>
               <ul>
                 <li className="half">
                   <input type="text" placeholder="Name" name="name" required />
