@@ -1,6 +1,15 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useEffect, useState } from "react";
 import AnimatedLetter from "../AnimatedLetters/AnimatedLetters";
 import "./About.scss";
+import {
+  faCss3,
+  faGithubSquare,
+  faHtml5,
+  faJsSquare,
+  faNodeJs,
+  faReact,
+} from "@fortawesome/free-brands-svg-icons";
 
 const About = () => {
   const [letterName, setLetterName] = useState("text-animate");
@@ -36,6 +45,28 @@ const About = () => {
           lover and tech-obsessed. And one of the quotes I adopted over time is
           that <b> Obsession is a bigger drive that Talent</b>{" "}
         </p>
+      </div>
+      <div className="cubic-container">
+        <div className="cubic-spinner">
+          <div className="face-1">
+            <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
+          </div>
+          <div className="face-2">
+            <FontAwesomeIcon icon={faHtml5} color="#F06529" />
+          </div>
+          <div className="face-3">
+            <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
+          </div>
+          <div className="face-4">
+            <FontAwesomeIcon icon={faJsSquare} color="#EFD810" />
+          </div>
+          <div className="face-5">
+            <FontAwesomeIcon icon={faGithubSquare} color="#000000" />
+          </div>
+          <div className="face-6">
+            <FontAwesomeIcon icon={faNodeJs} color="#3C873A" />
+          </div>
+        </div>
       </div>
     </div>
   );
