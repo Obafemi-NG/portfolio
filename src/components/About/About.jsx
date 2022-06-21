@@ -31,6 +31,7 @@ const About = () => {
             />
           </h1>
           <p>
+            I'm Obafemi Hezekiah Oludahunsi, with the nickname <b>Hezcode.</b>{" "}
             I'm a very ambitious Front-End Developer looking for a role in an
             established IT company with the opportunity to work with the latest
             technologies on challenging and diverse projects.
