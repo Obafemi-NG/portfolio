@@ -1,0 +1,78 @@
+.contact-page {
+  .form-area {
+    width: 100%;
+    margin-top: 20px;
+    ul {
+      margin: 0;
+      padding: 0;
+      li {
+        list-style: none;
+        padding-bottom: 10px;
+        display: block;
+        position: relative;
+        overflow: hidden;
+        clear: both;
+        opacity: 0;
+        animation: fadeInUp 1s 1.3s forwards;
+      }
+      li.half {
+        width: 49%;
+        float: left;
+        clear: none;
+        margin-left: 2%;
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+    input[type="text"],
+    input[type="email"] {
+      width: 100%;
+      height: 50px;
+      border: none;
+      outline: none;
+      padding: 0px 20px;
+      font-size: 16px;
+      background-color: #155173;
+      color: white;
+      font-weight: 500;
+      box-sizing: border-box;
+      &::placeholder {
+        padding-left: px;
+        font-size: 14px;
+        color: white;
+        font-weight: 300;
+      }
+    }
+    textarea {
+      width: 100%;
+      background-color: #155173;
+      border: none;
+      color: #fff;
+      padding: 20px;
+      outline: none;
+      height: 50px;
+      min-height: 150px;
+      box-sizing: border-box;
+      &::placeholder {
+        color: #fff;
+        font-weight: 300;
+      }
+    }
+    .send-btn {
+      padding: 8px 15px;
+      border: 1px solid #ffd710;
+      background-color: transparent;
+      color: #ffd710;
+      border-radius: 4px;
+      float: right;
+      font-weight: 500;
+      letter-spacing: 2px;
+      transition: all 0.3s;
+      &:hover {
+        background-color: #155173;
+        cursor: pointer;
+      }
+    }
+  }
+}
