@@ -4,7 +4,6 @@ import logoSub from "../../assets/images/logo-s.png";
 import { useNavigate } from "react-router-dom";
 import AnimatedLetter from "../AnimatedLetters/AnimatedLetters";
 
-import Logo from "./Logo/Logo";
 import Loader from "react-loaders";
 
 const Home = () => {
@@ -60,13 +59,12 @@ const Home = () => {
               idx={21}
             />{" "}
           </h1>
-          <h2> Frontend Developer | Javascript Expert | Gamer </h2>
+          <h2> Frontend Developer | Javascript Expert | Designer </h2>
           <button onClick={() => navigate("/contact")} className="flat-btn">
             {" "}
             CONTACT ME{" "}
           </button>
         </div>
-        {/* <Logo /> */}
       </div>
       <Loader type="pacman" />
     </>
