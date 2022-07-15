@@ -66,7 +66,7 @@ const Home = () => {
             CONTACT ME{" "}
           </button>
         </div>
-        <Logo />
+        {/* <Logo /> */}
       </div>
       <Loader type="pacman" />
     </>

@@ -7,6 +7,9 @@
 .top-tag {
   bottom: auto;
   top: 24px;
+  @media screen and (max-width: 480px) {
+    top: 16px;
+  }
 }
 .tags {
   position: absolute;
@@ -16,6 +19,10 @@
   opacity: 0.6;
   left: 120px;
   bottom: 0;
+  @media screen and (max-width: 480px) {
+    font-size: 12px;
+    left: 12px;
+  }
 }
 
 .bottom-tag {
@@ -23,6 +30,9 @@
 }
 .bottom-tag-html {
   margin-left: -20px;
+  @media screen and (max-width: 480px) {
+    margin-left: -10px;
+  }
 }
 
 .container {
