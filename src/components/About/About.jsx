@@ -7,8 +7,8 @@ import {
   faGithubSquare,
   faHtml5,
   faJsSquare,
-  faNodeJs,
   faReact,
+  faFigma,
 } from "@fortawesome/free-brands-svg-icons";
 import Loader from "react-loaders";
 
@@ -67,7 +67,7 @@ const About = () => {
               <FontAwesomeIcon icon={faGithubSquare} color="#000000" />
             </div>
             <div className="face-6">
-              <FontAwesomeIcon icon={faNodeJs} color="#3C873A" />
+              <FontAwesomeIcon icon={faFigma} color="#3C873A" />
             </div>
           </div>
         </div>

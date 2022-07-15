@@ -1,13 +1,15 @@
 .contact-page {
   @media screen and (max-width: 480px) {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
+    height: 100%;
+    position: relative;
   }
   .text-area {
-    background-color: red;
-    width: 80%;
-    // margin-top: 20px;
+    background-color: white;
+    @media screen and (max-width: 480px) {
+      transform: translateY(-87%);
+      width: 90%;
+      left: 0px;
+    }
     h1 {
       @media screen and (max-width: 480px) {
         font-size: 32px;
@@ -17,6 +19,7 @@
   .form-area {
     width: 100%;
     margin-top: 20px;
+    background-color: red;
     @media screen and (max-width: 480px) {
       margin-top: 0px;
     }
@@ -73,6 +76,9 @@
       height: 50px;
       min-height: 150px;
       box-sizing: border-box;
+      @media screen and (max-width: 480px) {
+        min-height: 100px;
+      }
       &::placeholder {
         color: #fff;
         font-weight: 300;
@@ -95,11 +101,18 @@
     }
   }
   .map-container {
-    display: none;
+    // display: none;
     position: absolute;
+    background-color: green;
     right: 0;
     width: 60%;
     height: 100%;
+    @media screen and (max-width: 480px) {
+      height: 40%;
+      left: 0;
+      width: 90%;
+      bottom: 5px;
+    }
     .dev-info {
       padding: 10px;
       color: white;
@@ -113,6 +126,10 @@
       height: fit-content;
       opacity: 0;
       animation: fadeIn 1s 1.5s forwards;
+      @media screen and (max-width: 480px) {
+        right: 2px;
+        top: -15px;
+      }
       span {
         display: block;
         padding-top: 20px;
