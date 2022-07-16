@@ -1,19 +1,16 @@
 .page {
   width: 100%;
   height: 100%;
+  // background-color: red;
   position: absolute;
-}
-.nav-bar-overlay {
-  @media screen and (max-width: 480px) {
-    // display: none;
-  }
 }
 .menu-bar {
   position: absolute;
   right: 8px;
   top: 8px;
-  border: 0.5px solid white;
-  padding: 3px;
+  // border: 0.5px solid white;
+  background-color: #15517392;
+  padding: 5px;
   border-radius: 3px;
   display: flex;
   justify-content: center;
@@ -25,8 +22,6 @@
 .top-tag {
   bottom: auto;
   top: 24px;
-  // width: 95%;
-  // background-color: red;
   @media screen and (max-width: 480px) {
     top: 16px;
   }
@@ -71,6 +66,4 @@
   transform-style: preserve-3d;
   animation: fadeIn 1s forwards;
   animation-delay: 1s;
-  @media screen and (max-width: 480px) {
-  }
 }

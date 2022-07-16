@@ -7,7 +7,6 @@
   z-index: 5;
   min-height: 500px;
   @media screen and (max-width: 480px) {
-    // display: none;
     width: 50%;
   }
   .logo {
@@ -77,6 +76,11 @@
     a.about-link {
       &::after {
         content: "ABOUT";
+      }
+    }
+    a.portfolio-link {
+      &::after {
+        content: "PORTFOLIO";
       }
     }
     a.contact-link {

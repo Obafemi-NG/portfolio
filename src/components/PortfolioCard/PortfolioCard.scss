@@ -1,0 +1,66 @@
+.card {
+  width: 420px;
+  height: fit-content;
+  background-color: #155173;
+  margin-bottom: 24px;
+  border-radius: 8px;
+  padding: 5px;
+  color: white;
+  margin-right: 24px;
+  @media screen and (max-width: 480px) {
+    width: 80%;
+
+    background-color: #155173;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    padding: 5px;
+    color: white;
+  }
+  .sample-image {
+    img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px 8px 0px 0px;
+    }
+  }
+  .bottom-section {
+    padding-bottom: 8px;
+    .details {
+      h1 {
+        font-size: 16px;
+        color: white;
+      }
+      p {
+        color: lightgray;
+      }
+    }
+    .source-code-btn {
+      background-color: transparent;
+      color: white;
+      text-transform: uppercase;
+      padding: 8px 12px;
+      outline: none;
+      border: 1px solid white;
+      &:hover {
+        background-color: #022c43;
+        cursor: pointer;
+        transition: all 0.4s;
+      }
+    }
+    .demo-btn {
+      background-color: #022c43;
+      color: #ffd700;
+      padding: 8px 12px;
+      text-transform: uppercase;
+      border: 1px solid #ffd700;
+      margin-right: 16px;
+      &:hover {
+        background-color: #ffd700;
+        border: 1px solid #022c43;
+        color: #022c43;
+        cursor: pointer;
+      }
+    }
+  }
+}

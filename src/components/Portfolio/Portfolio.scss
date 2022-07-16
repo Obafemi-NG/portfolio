@@ -1,0 +1,59 @@
+.portfolio-page {
+  position: absolute;
+  left: 10%;
+  top: 9%;
+  @media screen and (max-width: 480px) {
+    left: 8px;
+  }
+  .text-area {
+    h1 {
+      color: #ffd700;
+      font-size: 56px;
+      font-weight: 400;
+      margin-top: 0;
+      font-family: "coolvetica";
+      margin-left: 10px;
+      position: relative;
+      margin-bottom: 40px;
+      white-space: nowrap;
+      @media screen and (max-width: 480px) {
+        font-size: 32px;
+      }
+      &::before {
+        content: "<h1>";
+        font-size: 18px;
+        position: absolute;
+        font-family: "la belle aurore";
+        opacity: 0.6;
+        top: -10px;
+        left: -10px;
+        @media screen and (max-width: 480px) {
+          font-size: 12px;
+        }
+      }
+      &::after {
+        content: "</h1>";
+        font-size: 18px;
+        position: absolute;
+        font-family: "la belle aurore";
+        bottom: -15px;
+        left: 0;
+        opacity: 0.6;
+        left: -10px;
+        @media screen and (max-width: 480px) {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  .projects-container {
+    display: flex;
+    // justify-content: space-around;
+    flex-wrap: wrap;
+    @media screen and (max-width: 480px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
