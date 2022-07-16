@@ -20,7 +20,13 @@ const Layout = () => {
           {" "}
           <MenuBar height="24px" width="24px" fill="white" />{" "}
         </span>
-        <Outlet />
+        <div
+          onClick={() => {
+            setShowNavbar(false);
+          }}
+        >
+          <Outlet />
+        </div>
         <span className="tags bottom-tag"> &lt;/body&gt; </span> <br />
         <span className="tags bottom-tag-html"> &lt;/html&gt; </span>
       </div>
