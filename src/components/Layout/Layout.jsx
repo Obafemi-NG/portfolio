@@ -3,6 +3,7 @@ import { Outlet } from "react-router-dom";
 import Sidebar from "../Sidebar/Sidebar";
 import "./Layout.scss";
 import { ReactComponent as MenuBar } from "../../assets/images/bars-solid.svg";
+import WebSidebar from "../WebSidebar/WebSidebar";
 
 const Layout = () => {
   const [showNavbar, setShowNavbar] = useState(false);
@@ -11,7 +12,8 @@ const Layout = () => {
   };
   return (
     <div className="layout">
-      <div className="nav-bar-overlay">{showNavbar && <Sidebar />}</div>
+      {showNavbar && <Sidebar />}
+      <WebSidebar />
       <div className="page">
         <span className="tags top-tag"> &lt;body&gt; </span>
         <span onClick={toggleNavbar} className="menu-bar">
