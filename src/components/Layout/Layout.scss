@@ -4,9 +4,25 @@
   position: absolute;
 }
 
+.menu-bar {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  border: 0.5px solid white;
+  padding: 3px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  display: none;
+  @media screen and (max-width: 480px) {
+    display: flex;
+  }
+}
 .top-tag {
   bottom: auto;
   top: 24px;
+  // width: 95%;
+  // background-color: red;
   @media screen and (max-width: 480px) {
     top: 16px;
   }

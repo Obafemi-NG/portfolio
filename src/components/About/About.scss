@@ -11,15 +11,15 @@
   transform-style: preserve-3d;
   animation: fadeIn 1s forwards;
   animation-delay: 1s;
-  // background-color: red;
   @media screen and (max-width: 480px) {
   }
 }
 .about-page,
 .contact-page {
   position: absolute;
-  left: 8px;
+  left: 10%;
   @media screen and (max-width: 480px) {
+    left: 8px;
   }
   .text-area {
     position: absolute;
