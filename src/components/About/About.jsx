@@ -32,20 +32,20 @@ const About = () => {
           </h1>
           <p>
             I'm Obafemi Hezekiah Oludahunsi, with the nickname <b>Hezcode.</b>{" "}
-            I'm a very ambitious Front-End Developer looking for a role in an
-            established IT company with the opportunity to work with the latest
-            technologies on challenging and diverse projects.
+            I'm a very ambitious Front-End Developer and Designer looking for a
+            role in an established IT company with the opportunity to work with
+            the latest technologies on challenging and diverse projects.
           </p>
           <p>
             {" "}
             I'm quietly confident, naturally curious and perpetually working on
-            improving my chops on one design one design at a time.{" "}
+            improving my chops on one design at a time.{" "}
           </p>
           <p>
             {" "}
             If I need to define myself in one sentence that would be a young,
-            vibrant, ambitious, a sports fanatics, a Madrististas, Soccer game
-            lover and tech-obsessed. And one of the quotes I adopted over time
+            ambitious, a sports fanatics, a Madrististas, Soccer game lover and
+            tech-obsessed individual. And one of the quotes I adopted over time
             is that <b> Obsession is a bigger drive that Talent</b>{" "}
           </p>
         </div>

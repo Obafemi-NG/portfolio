@@ -3,7 +3,11 @@
   height: 100%;
   position: absolute;
 }
-
+.nav-bar-overlay {
+  @media screen and (max-width: 480px) {
+    // display: none;
+  }
+}
 .menu-bar {
   position: absolute;
   right: 8px;
