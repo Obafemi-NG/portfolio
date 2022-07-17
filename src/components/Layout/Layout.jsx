@@ -18,7 +18,7 @@ const Layout = () => {
         <span className="tags top-tag"> &lt;body&gt; </span>
         <span onClick={toggleNavbar} className="menu-bar">
           {" "}
-          <MenuBar height="24px" width="24px" fill="white" />{" "}
+          <MenuBar height="32px" width="32px" fill="white" />{" "}
         </span>
         <div
           onClick={() => {
