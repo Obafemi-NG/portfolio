@@ -6,7 +6,9 @@ import Scandiweb from "../../assets/images/Scandiweb_ss.png";
 import CrownStore from "../../assets/images/CrownStore_ss.png";
 import LadeLogo from "../../assets/images/LadeLogo.png";
 import JulsLogo from "../../assets/images/JulsAfriqueLogo.jpg";
+import HairIt from "../../assets/images/Hair-it.png";
 import { useEffect } from "react";
+import Loader from "react-loaders";
 
 const Portfolio = () => {
   const [letterName, setLetterName] = useState("text-animate");
@@ -38,58 +40,72 @@ const Portfolio = () => {
     {
       index: 3,
       title: "Lade Jewelry",
-      category: "logo",
+      category: "design",
       imgUrl: LadeLogo,
+      websiteLink: "https://ibb.co/xqyhQDH",
       description:
         "This is a Logo designed for a business that deals with the sales of clothing accessories(jewelries majorly)",
     },
     {
       index: 4,
       title: "Juls Afrique ",
-      category: "logo",
+      category: "design",
       imgUrl: JulsLogo,
+      websiteLink: "https://ibb.co/KFMP6N7",
       description:
         "This is a Logo designed for a clothing line that is focused on making designs using only african fabrics. This explains the whole inspiration behind the design",
     },
+    {
+      index: 5,
+      title: "Hairit",
+      category: "design",
+      imgUrl: HairIt,
+      description:
+        "This is a Logo that was designed for a Business brand that is focus mainly on the sales of Ladies Hair",
+      websiteLink: "https://ibb.co/tmWgPGp",
+    },
   ];
   return (
-    <div className="container portfolio-page">
-      <div className="text-area">
-        <h1>
-          <AnimatedLetter
-            letterName={letterName}
-            strArray={[
-              "M",
-              "y",
-              " ",
-              "P",
-              "o",
-              "r",
-              "t",
-              "f",
-              "o",
-              "l",
-              "i",
-              "o",
-            ]}
-            idx={15}
-          />
-        </h1>
+    <>
+      <div className="container portfolio-page">
+        <div className="text-area">
+          <h1>
+            <AnimatedLetter
+              letterName={letterName}
+              strArray={[
+                "M",
+                "y",
+                " ",
+                "P",
+                "o",
+                "r",
+                "t",
+                "f",
+                "o",
+                "l",
+                "i",
+                "o",
+              ]}
+              idx={15}
+            />
+          </h1>
+        </div>
+        <div className="projects-container">
+          {projects.map((project) => (
+            <PortfolioCard
+              key={project.index}
+              title={project.title}
+              category={project.category}
+              imgUrl={project.imgUrl}
+              description={project.description}
+              gitHubLink={project.gitHubLink}
+              websiteLink={project.websiteLink}
+            />
+          ))}
+        </div>
       </div>
-      <div className="projects-container">
-        {projects.map((project) => (
-          <PortfolioCard
-            key={project.index}
-            title={project.title}
-            category={project.category}
-            imgUrl={project.imgUrl}
-            description={project.description}
-            gitHubLink={project.gitHubLink}
-            websiteLink={project.websiteLink}
-          />
-        ))}
-      </div>
-    </div>
+      <Loader type="pacman" />
+    </>
   );
 };
 
